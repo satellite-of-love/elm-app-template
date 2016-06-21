@@ -1,7 +1,7 @@
 name: 
-  blank-name
+  elm-app
 type:
-  what-type-of-template
+  elm
 
 description: 
-  A brief description
+  Let's make a happy new Elm page

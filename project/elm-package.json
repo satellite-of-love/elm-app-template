@@ -1,15 +1,21 @@
+#set( $capname = $name.substring(0,1).toUpperCase() + $name.substring(1) )
 {
     "version": "1.0.0",
+    ## one-line comment (this line is not output)
     "summary": "$description",
-    "repository": "https://github.com/$group_id/$name.git",
+    "repository": "https://github.com/$group_id/${name.toLowerCase()}.git",
     "license": "BSD3",
-    "source-directories": [
+    "source-directories": [ ## at end of line (results in no newline where I would expect a newline)
         "src"
     ],
+    #* multi
+    line 
+    comment 
+    (which results in a blank line in the output) *#
     "exposed-modules": [],
     "dependencies": {
         "elm-lang/core": "4.0.1 <= v < 5.0.0",
         "elm-lang/html": "1.0.0 <= v < 2.0.0"
     },
-    "elm-version": "0.17.1 <= v < 0.18.0"
+    "elm-version": "0.17.1 <= v < 0.18.0" #* this won't take out the newline *#
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-validation_response=$(curl -s -H "Content-Type: application/json" -X POST https://atomist.atomist.services/project-operation/validate-template -d '{ "owner": "atomist-project-templates", "repo": "blank-template" }')
+validation_response=$(curl -s -H "Content-Type: application/json" -X POST https://atomist.atomist.services/project-operation/validate-template -d '{ "owner": "satellite-of-love", "repo": "elm-app-template" }')
 
 if [[ $validation_response == *'"errors" : [ ]'* ]]
 then

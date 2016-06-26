@@ -1,7 +1,16 @@
 name: 
   elm-app
-type:
-  elm
 
 description: 
   Let's make a happy new Elm page
+
+parameters:
+  - name: description
+    required: false
+    description: Short app description
+    valid-input-description: 50 characters or so
+
+tags:
+  - name: elm
+    description: the Elm programming language
+

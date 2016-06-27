@@ -8,7 +8,8 @@ parameters:
   - name: description
     required: false
     description: Short app description
-    valid-input-description: 50 characters or so
+    pattern: /[^"]{0-50}/
+    valid-input-description: 50 characters or so, no double quotes
 
 tags:
   - name: elm

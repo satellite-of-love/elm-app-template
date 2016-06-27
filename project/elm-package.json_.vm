@@ -1,4 +1,3 @@
-#set( $capname = $name.substring(0,1).toUpperCase() + $name.substring(1) )
 {
     "version": "1.0.0",
     ## one-line comment (this line is not output)

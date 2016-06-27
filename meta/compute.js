@@ -9,5 +9,5 @@ function computed_parameters(existing_parameters) {
   // also need to mush out dashes, make a nice camel case
   var elmModuleName = camelize(existing_parameters["name"])
 
-  return { module_name : elmModuleName }
+  return { "module_name" : elmModuleName }
 }

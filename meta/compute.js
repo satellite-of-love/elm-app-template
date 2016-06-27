@@ -11,5 +11,7 @@ function computed_parameters(m) {
   // also need to mush out dashes, make a nice camel case
   var elmModuleName = camelize(m["name"])
 
-  return { "module_name" : elmModuleName }
+  var aMap = new Map();
+  aMap.set("module_name", elmModuleName);
+  return aMap;
 }
